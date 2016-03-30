@@ -1,6 +1,6 @@
 import {Component, Directive} from 'angular2/core';
 import {EmployeeList} from './employee-list.component';
-import {ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
+import {ROUTER_DIRECTIVES, RouteConfig, ROUTER_PROVIDERS} from 'angular2/router';
 
 @Component({
     selector: 'my-app',
@@ -13,7 +13,8 @@ import {ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
 	   <div>
     		<router-outlet></router-outlet>
     	</div>`,
-    directives: [EmployeeList, ROUTER_DIRECTIVES]
+    directives: [EmployeeList, ROUTER_DIRECTIVES],
+    providers: [ROUTER_PROVIDERS]
 })
 
 @RouteConfig([

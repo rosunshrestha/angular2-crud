@@ -37,8 +37,7 @@ System.register(['angular2/core', './employee-list.component', 'angular2/router'
                     core_1.Component({
                         selector: 'my-app',
                         template: "<header>\n\t\t<nav>\n\t\t<a [routerLink]=\"['Employees']\">Employees</a>\n\t\t<a [routerLink]=\"['NewEmployee']\">New Employee</a>\n\t\t</nav>\n\t\t</header>\n\t   <div>\n    \t\t<router-outlet></router-outlet>\n    \t</div>",
-                        directives: [employee_list_component_1.EmployeeList, router_1.ROUTER_DIRECTIVES],
-                        providers: [router_1.ROUTER_PROVIDERS]
+                        directives: [employee_list_component_1.EmployeeList, router_1.ROUTER_DIRECTIVES]
                     }),
                     router_1.RouteConfig([
                         { path: 'employees', name: 'Employees', component: employee_list_component_1.EmployeeList, useAsDefault: true },
